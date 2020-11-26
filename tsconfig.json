@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -19,7 +18,25 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "librarke": [
+        "dist/librarke/librarke",
+        "dist/librarke"
+      ],
+      "lib-list": [
+        "dist/lib-list/lib-list",
+        "dist/lib-list"
+      ],
+      "lib-add": [
+        "dist/lib-add/lib-add",
+        "dist/lib-add"
+      ],
+      "lib2-add": [
+        "dist/lib2-add/lib2-add",
+        "dist/lib2-add"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
