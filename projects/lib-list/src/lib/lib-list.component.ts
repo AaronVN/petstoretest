@@ -1,20 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+// import { LibListService } from './lib-list.service';
 
 @Component({
   selector: 'lib-lib-list',
-  template: `
-    <p>
-      lib-list works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './lib-list.component.html',
+  styleUrls: ['./lib-list.component.css']
 })
-export class LibListComponent implements OnInit {
+export class LibListComponent {
+  constructor() {
+    }
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+
+
 
 }

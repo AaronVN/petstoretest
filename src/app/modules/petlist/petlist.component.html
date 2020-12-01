@@ -1,1 +1,31 @@
-<p>petlist works!</p>
+<div *ngIf = "showingAvailable">
+  <label *ngFor="let pet of pets">
+    <span>{{pet.id}}</span>
+    <span>{{pet.name}}</span>
+    <span>{{pet.status}}</span>
+  </label>
+
+
+
+
+</div>
+<div *ngIf = "showingPending">
+
+
+
+
+</div>
+<div *ngIf = "showingSold">
+
+
+
+
+</div>
+
+<div>
+	<p>¿Que lista quieres ver?</p>
+	<button (click) = "setListTypeD()"> Disponibles </button>
+	<button (click) = "setListTypeP()"> Pendientes </button>
+	<button (click) = "setListTypeV()"> Vendidos </button>
+
+</div>
