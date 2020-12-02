@@ -1,24 +1,31 @@
 <div *ngIf = "showingAvailable">
-  <label *ngFor="let pet of pets">
-    <span>{{pet.id}}</span>
-    <span>{{pet.name}}</span>
-    <span>{{pet.status}}</span>
-  </label>
-
-
-
+  <ul>
+    <li *ngFor = "let pet of pets">
+      <span>ID: {{pet.id}}</span>
+     <span>Nombre: {{pet.name}}</span>
+      <span>Estado: {{pet.status}}</span>
+    </li>
+</ul>
 
 </div>
 <div *ngIf = "showingPending">
-
-
-
+  <ul>
+    <li *ngFor = "let pet of pets">
+      <span>ID: {{pet.id}}</span>
+     <span>Nombre: {{pet.name}}</span>
+      <span>Estado: {{pet.status}}</span>
+    </li>
+</ul>
 
 </div>
 <div *ngIf = "showingSold">
-
-
-
+  <ul>
+    <li *ngFor = "let pet of pets">
+      <span>ID: {{pet.id}}</span>
+     <span>Nombre: {{pet.name}}</span>
+      <span>Estado: {{pet.status}}</span>
+    </li>
+</ul>
 
 </div>
 

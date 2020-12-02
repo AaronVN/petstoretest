@@ -16,11 +16,14 @@ export class LibListService {
 
 
 
-  pets: any = [];
+  private pets: any = [];
 
     // tslint:disable-next-line: typedef
     getList(statusType: string) { // type será el status (establecido a través de HTML: available, pending y sold
      // tslint:disable-next-line: typedef
+
+     // vaciar array this.pets
+
     this.getPetsByStatus(statusType)
        .subscribe((data: any) => {
       for (const d of (data as any)) {
@@ -30,10 +33,9 @@ export class LibListService {
         status: d.status
         });
       }
-      console.log(this.pets);
-      return this.pets;
-    });
 
+    });
+    return this.pets;
   }
 
 
