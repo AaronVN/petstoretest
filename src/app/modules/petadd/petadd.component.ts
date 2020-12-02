@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Pet} from '../../models/pet';
 
 @Component({
   selector: 'app-petadd',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class PetaddComponent implements OnInit {
 
   constructor() { }
+  recievedPet: any;
+  pet: any;
+  editing = false;
 
   ngOnInit(): void {
   }
