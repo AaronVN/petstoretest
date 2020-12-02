@@ -23,7 +23,7 @@ export class LibListService {
      // tslint:disable-next-line: typedef
 
      // vaciar array this.pets
-
+    this.pets.splice(0);
     this.getPetsByStatus(statusType)
        .subscribe((data: any) => {
       for (const d of (data as any)) {
@@ -39,7 +39,9 @@ export class LibListService {
     console.log(this.pets);
     return this.pets;
   }
+  EmptyList() {
 
+  }
 
   // tslint:disable-next-line: typedef
   getAllInfo() {
