@@ -1,3 +1,4 @@
+// tslint:disable
 import { Component, OnInit } from '@angular/core';
 import { LibListService } from 'lib-list';
 import {Pet} from '../../models/pet';
@@ -19,8 +20,6 @@ export class PetlistComponent implements OnInit {
   }
   pets: any = [];
   ngOnInit(): void {
-    /*this.pets = this.lib.getAllInfo(); // prueba para buscar el error, >> borrar
-    console.log(this.pets);*/
     this.showingAvailable = true;
     this.showingPending = false;
     this.showingSold = false;
@@ -30,19 +29,16 @@ export class PetlistComponent implements OnInit {
   }
 
   // Buttons
-  // tslint:disable-next-line: typedef
   setListTypeD() {// Metodo para vaciar array
                   this.pets = this.lib.getList('available');
                   this.showingAvailable = true; this.showingPending = false; this.showingSold = false;
                 }
-  // tslint:disable-next-line: typedef
   setListTypeP() {
                   this.pets = this.lib.getList('pending');
                   this.showingAvailable = false; this.showingPending = true; this.showingSold = false;
   }
-  // tslint:disable-next-line: typedef
   setListTypeV() {
                   this.pets = this.lib.getList('sold');
-                  this.showingAvailable = false; this.showingPending = false; this.showingSold = true;
+                  this.showingAvailable = true; this.showingPending = false; this.showingSold = false;
    }
 }

@@ -1,5 +1,13 @@
-span {border: 1px solid white; padding: 1em; background-color: #0000002c; color: white; border-radius: 1em;}
-li {padding: 1.5em;}
+td {border: 1px solid white;
+  background-color: #0000002c;
+  color: white;
+  border-radius: 1em;
+  padding: 0.3em;
+  margin-left: 1em;}
+tr {padding: 1em; background-color: rgba(0, 0, 0, 0.267); }
+tr.hoverable:hover {background-color: rgba(251, 255, 0, 0.397);}
 div.table {background-color: #0000007c;}
 div {text-align:center;}
-h2 {color: white;}
+h2 {column-span: all;}
+th {color: white; }
+table{width:60%; margin:auto;min-height:100em;}

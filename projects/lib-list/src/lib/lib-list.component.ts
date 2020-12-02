@@ -1,5 +1,6 @@
+// tslint:disable
 import { Component } from '@angular/core';
-// import { LibListService } from './lib-list.service';
+import { LibListService } from './lib-list.service';
 
 @Component({
   selector: 'lib-lib-list',

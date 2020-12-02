@@ -1,8 +1,20 @@
-ul {
+ul,li {
   display: inline;
+  list-style-type: none;
+}
+button {border: 2px black solid;
+background-color: rgb(143, 201, 228);
+padding: 0.5em;
+color: black;}
+button:hover {
+  background-color: rgb(102, 169, 201);
+  border: 2px yellow solid;
+  color: yellow;
 }
 div.tabbar,h1 {
   background-color: #c5c5ff;
   text-align: center;
   border: 1px solid #78789b;
+  color: rgb(255, 255, 154);
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
