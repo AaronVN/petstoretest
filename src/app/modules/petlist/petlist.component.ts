@@ -25,6 +25,7 @@ export class PetlistComponent implements OnInit {
     this.showingPending = false;
     this.showingSold = false;
     this.pets = this.lib.getList('available');
+    console.log('Recibida array pets: ');
     console.log(this.pets);
   }
 

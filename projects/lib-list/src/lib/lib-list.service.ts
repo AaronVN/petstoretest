@@ -35,6 +35,8 @@ export class LibListService {
       }
 
     });
+    console.log('Servicio Libreria: Enviando Array pets: ');
+    console.log(this.pets);
     return this.pets;
   }
 

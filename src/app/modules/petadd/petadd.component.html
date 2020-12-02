@@ -1,7 +1,7 @@
 
 <div >
-<h2 *ngIf = "editing"> Nueva mascota </h2>
-<h2 *ngIf = "!editing"> Editando mascota {{recievedPet.name}} </h2>
+<h2 *ngIf = "!editing"> Nueva mascota </h2>
+<h2 *ngIf = "editing"> Editando mascota {{recievedPet.name}} </h2>
 <label > <span> Nombre: </span> <input [(ngModel)] = "pet.name"> </label>
 <div > <span> Estado: </span> <select>
                                 <option>
