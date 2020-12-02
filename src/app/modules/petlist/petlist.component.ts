@@ -33,13 +33,16 @@ export class PetlistComponent implements OnInit {
   // tslint:disable-next-line: typedef
   setListTypeD() {// Metodo para vaciar array
                   this.pets = this.lib.getList('available');
+                  this.showingAvailable = true; this.showingPending = false; this.showingSold = false;
                 }
   // tslint:disable-next-line: typedef
   setListTypeP() {
-    this.pets = this.lib.getList('pending');
+                  this.pets = this.lib.getList('pending');
+                  this.showingAvailable = false; this.showingPending = true; this.showingSold = false;
   }
   // tslint:disable-next-line: typedef
   setListTypeV() {
-    this.pets = this.lib.getList('sold');
+                  this.pets = this.lib.getList('sold');
+                  this.showingAvailable = false; this.showingPending = false; this.showingSold = true;
    }
 }

@@ -1,38 +1,38 @@
-<div *ngIf = "showingAvailable">
-  <ul>
-    <li *ngFor = "let pet of pets">
-      <span>ID: {{pet.id}}</span>
-     <span>Nombre: {{pet.name}}</span>
-      <span>Estado: {{pet.status}}</span>
-    </li>
-</ul>
-
-</div>
-<div *ngIf = "showingPending">
-  <ul>
-    <li *ngFor = "let pet of pets">
-      <span>ID: {{pet.id}}</span>
-     <span>Nombre: {{pet.name}}</span>
-      <span>Estado: {{pet.status}}</span>
-    </li>
-</ul>
-
-</div>
-<div *ngIf = "showingSold">
-  <ul>
-    <li *ngFor = "let pet of pets">
-      <span>ID: {{pet.id}}</span>
-     <span>Nombre: {{pet.name}}</span>
-      <span>Estado: {{pet.status}}</span>
-    </li>
-</ul>
-
-</div>
-
 <div>
 	<p>¿Que lista quieres ver?</p>
 	<button (click) = "setListTypeD()"> Disponibles </button>
 	<button (click) = "setListTypeP()"> Pendientes </button>
 	<button (click) = "setListTypeV()"> Vendidos </button>
+
+</div>
+
+<div *ngIf = "showingAvailable" class = "table">
+  <ul> <h2>Actualmente viendo por Available</h2>
+    <li *ngFor = "let pet of pets">
+      <span>ID: {{pet.id}}</span>
+     <span>Nombre: {{pet.name}}</span>
+      <span>Estado: {{pet.status}}</span>
+    </li>
+</ul>
+
+</div>
+<div *ngIf = "showingPending" class = "table">
+  <ul> <h2>Actualmente viendo por Pending</h2>
+    <li *ngFor = "let pet of pets">
+      <span>ID: {{pet.id}}</span>
+     <span>Nombre: {{pet.name}}</span>
+      <span>Estado: {{pet.status}}</span>
+    </li>
+</ul>
+
+</div>
+<div *ngIf = "showingSold" class = "table">
+  <ul> <h2>Actualmente viendo por Sold</h2>
+    <li *ngFor = "let pet of pets">
+      <span>ID: {{pet.id}}</span>
+     <span>Nombre: {{pet.name}}</span>
+      <span>Estado: {{pet.status}}</span>
+    </li>
+</ul>
 
 </div>
