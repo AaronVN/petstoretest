@@ -1,0 +1,9 @@
+div {text-align: center;
+  background-color: #78789b; color: white;}
+label {padding: 0.8em; border-radius: 0.5em;}
+label.error {
+  background-color: rgb(228, 78, 78);
+}
+label.suscess{
+  background-color: rgb(78, 210, 228);
+}
