@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PetaddRoutingModule } from './petadd-routing.module';
 import { PetaddComponent } from './petadd.component';
 
+import { Lib2AddModule } from 'lib2-add';
 
 @NgModule({
   declarations: [PetaddComponent],
@@ -13,7 +14,8 @@ import { PetaddComponent } from './petadd.component';
     CommonModule,
     PetaddRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Lib2AddModule
   ]
 })
 export class PetaddModule { }

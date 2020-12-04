@@ -1,0 +1,25 @@
+
+<div>
+  <h2 *ngIf = "!editing"> Nueva mascota </h2>
+  <h2 *ngIf = "editing"> Editando mascota {{recievedPet.name}} </h2>
+  <label *ngIf = "thereIsanError" class = "error" > {{message}} <br></label>
+  <label *ngIf = "AddingSuscess" class = "suscess">{{message}} <br></label>
+  <br>
+  <label > <span> Nombre: </span> <input [(ngModel)] = "ePet.name"> </label>
+  <div> <span> Estado: </span> <select [(ngModel)]= "ePet.status" >
+                                  <option value = "available">
+                                    Disponible
+                                  </option>
+                                  <option value = "pending">
+                                    Pendiente
+                                  </option>
+                                  <option value = "sold">
+                                    Vendida
+                                  </option>
+                                </select> </div>
+  <div>
+    <button *ngIf = "!editing" (click) = "AddPet()">Añadir mascota</button>
+    <button *ngIf = "editing" disabled >Confirmar edición</button>
+  </div>
+
+  </div> <!-- cada bind debe ser igual en todos para que se lea, si no no aparece nada-->

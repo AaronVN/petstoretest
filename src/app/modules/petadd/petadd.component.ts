@@ -10,7 +10,9 @@ import {Pet} from '../../models/pet';
 export class PetaddComponent implements OnInit {
 
   constructor() { }
-  recievedPet: any;
+  ngOnInit(): void {
+  }
+  /*recievedPet: any;
   ePet: Pet = {id: -1, name: 'SamplePet', status: 'pending'};
   emptyPet: Pet = {id: -1, name: '', status: 'pending'};
   editing = false;
@@ -18,10 +20,9 @@ export class PetaddComponent implements OnInit {
   AddingSuscess = false;
   message = 'Ha habido un error: Todavía no se ha establecido texto!'
 
-  ngOnInit(): void {
-  }
+
   AddPet() {
     this.AddingSuscess = true;
     this.message = 'Botón funciona y se enviaría la mascota a la API';
-  }
+  }*/
 }
