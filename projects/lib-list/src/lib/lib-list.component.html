@@ -1,0 +1,26 @@
+<div>
+	<p>¿Que lista quieres ver?</p>
+	<button (click) = "setListTypeD()"> Disponibles </button>
+	<button (click) = "setListTypeP()"> Pendientes </button>
+	<button (click) = "setListTypeV()"> Vendidos </button>
+
+</div>
+
+<div  class = "table">
+  <table>
+    <tr>
+      <th colspan = "3">
+        <h2  *ngIf = "showingAvailable">Actualmente viendo por Available</h2>
+        <h2 *ngIf = "showingPending">Actualmente viendo por pending</h2>
+        <h2 *ngIf = "showingSold">Actualmente viendo por Sold</h2>
+      </th>
+    </tr>
+    <tr>
+      <th>ID</th><th>Nombre</th><th>Estado</th>
+    </tr>
+    <tr *ngFor = "let pet of pets" class ="hoverable">
+      <td> {{pet.id}}</td><td> {{pet.name}}</td><td> {{pet.status | uppercase}}</td>
+    </tr>
+  </table>
+
+</div>
