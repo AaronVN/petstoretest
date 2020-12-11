@@ -1,5 +1,5 @@
 // tslint:disable
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -26,8 +26,6 @@ export class LibListService {
       }
 
     });
-    console.log('Servicio Libreria: Enviando Array pets: ');
-    console.log(this.pets);
     return this.pets;
   }
 
@@ -36,5 +34,8 @@ export class LibListService {
   getPetsByStatus(status: string) {
   this.InfoByStatus = 'https://petstore.swagger.io/v2/pet/findByStatus?status=' + status;
   return this.http.get(this.InfoByStatus);
+  }
+  ngOnDestroy() {
+    // this.getPetsByStatus(statusType).unsubscribe();
   }
 }
