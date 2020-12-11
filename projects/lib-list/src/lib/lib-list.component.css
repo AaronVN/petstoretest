@@ -3,11 +3,12 @@ td {border: 1px solid white;
   color: white;
   border-radius: 1em;
   padding: 0.3em;
-  margin-left: 1em;}
+  margin-left: 1em;
+  }
 tr {padding: 1em; background-color: rgba(0, 0, 0, 0.267); }
 tr.hoverable:hover {background-color: rgba(251, 255, 0, 0.397);}
 div.table {background-color: #0000007c;}
 div {text-align:center;}
 h2 {column-span: all;}
-th {color: white; }
-table{width:60%; margin:auto;min-height:100em;}
+th {color: white; height: 1em; }
+table{width:60%; margin:auto;}
